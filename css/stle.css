@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+    width: 100vw;
+}
+.parent {
+    float: left;
+}
+.child {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    animation-name: nature;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.child img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.nature1 {
+    animation-delay: 4s;
+}
+.nature2 {
+    animation-delay: 8s;
+}
+.nature3 {
+    animation-delay: 12s;
+}
+@keyframes nature {
+    from{
+        left: 0;
+    }
+    to{
+        left: calc(100vw - 400px);
+    }
+}
+/* ////////////////////////////////////////////////////////// */
+.parent1 {
+    float: right;
+}
+.child1 {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    animation-name: sea;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.child1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.sea2 {
+    animation-delay: 2s;
+}
+.nature5 {
+    animation-delay: 6s;
+}
+.nature6 {
+    animation-delay: 10s;
+}
+.nature7 {
+    animation-delay: 14s;
+}
+@keyframes sea {
+    from{
+        right: 0;
+    }
+    to{
+        right: calc(100vw - 400px);
+    }
+}
+.clearfix {
+    clear: both;
+}
