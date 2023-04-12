@@ -7,6 +7,16 @@
     position: absolute;
     width: 100vw;
 }
+button {
+    width: 100px;
+    padding: 10px;
+    margin-left: calc(50% - 50px);
+    margin-right: calc(50% - 50px);
+    font-size: x-large;
+    background-color: royalblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .parent {
     float: left;
 }
@@ -18,6 +28,7 @@
     animation-name: nature;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
 .child img {
     width: 100%;
@@ -53,6 +64,7 @@
     animation-name: sea;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
 .child1 img {
     width: 100%;
@@ -78,6 +90,9 @@
     to{
         right: calc(100vw - 400px);
     }
+}
+button:focus+.parent .child, button:focus~.parent1 .child1{
+    animation-play-state: running; 
 }
 .clearfix {
     clear: both;
